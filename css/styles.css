@@ -1,11 +1,15 @@
-.jumbotron {
-  text-align: center;
+#celebrity > div {
+  display: none;
+}
+
+.help {
+  display: none;
 }
 
 form {
   width: 45%;
 }
 
-.match  {
-  display: none;
+h1 {
+  text-align: center;
 }

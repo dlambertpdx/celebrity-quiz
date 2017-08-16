@@ -12,59 +12,78 @@
       <div class="jumbotron">
         <h1>Celebrity Dating Quiz</h1>
       </div>
-      <div>
-        <h3>Take our quiz, and we'll tell you who your celebrity dream date is:</h3>
-      </div>
       <form>
         <div class="form-group">
-          <label for="age">How old are you?</label>
-          <input id="name" class="form-control" type="text">
+          <label for="dine">What would you eat on your ideal date?</label>
+          <select class="form-control" name="dine" id="dine">
+            <option></option>
+            <option value="pizza">Pizza</option>
+            <option value="molecule">Molecular Gastronomy</option>
+            <option value="fast">Fast Food</option>
+            <option value="homemade">Homemade Cooking</option>
+          </select>
+          <span id="helpDine" class="help">WHAT KIND OF FOOD WOULD YOU LIKE?</span>
         </div>
+
         <div class="form-group">
-          <p><strong>What's your ideal location for a date?</strong></p>
-          <select class="form-control" id="date">
-            <option value="blank"></option>
-            <option value="thrill">Amusement Park</option>
-            <option value="vacation">Exotic Vacation</option>
-            <option value="dine">Quiet Dinner</option>
+          <label for="tp">Which way do you roll your tp?</label>
+          <label class="radio-inline">
+            <input id="tpOver" type="radio" name="tp">Over
+          </label>
+          <label class="radio-inline">
+            <input id="tpUnder" type="radio" name="tp"> Under
+          </label>
+          <label class="radio-inline">
+            <input id="tpOnTop" type="radio" name="tp"> Just on top of the empty roll ...
+          </label>
+          <span id="helpTp" class="help">Slow your roll, and tell us how you roll...</span>
+        </div>
+
+        <div class="form-group">
+          <label for="movie">What's your favorite movie genre?</label>
+          <select class="form-control" name="movie" id="movie">
+            <option></option>
+            <option value="horror">Horror</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="artsy">Artsy</option>
           </select>
         </div>
-        <p><strong>What is your favorite type of music?</strong></p>
-        <div class="radio">
-          <label>
-            <input type="radio" name="music" value="rock">
-            Rock-n-Roll
-          </label>
-          <label>
-            <input type="radio" name="music" value="classical">
-            Classical
-          </label>
-          <label>
-            <input type="radio" name="music" value="country">
-            Country
-          </label>
-        </div>
 
-        <button type="button" class="btn btn-primary" name="button">Find Your Match!</button>
+        <button type="button" class="btn btn-primary">See Your Celebrity Match!</button>
       </form>
-      
-<div class="output">
-  <div class="match" id="seinfeld">
-    <img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Jerry_Seinfeld.jpg" alt="Jerry Seinfeld">
-    <p>Jerry Seinfeld!</p>
-  </div>
-  <div class="match" id="feldman">
-    <img src="http://www.unsungfilms.com/wp-content/uploads/2012/02/feldman04.jpg" alt="Marty Feldman">
-    <p>Marty Feldman!</p>
-  </div>
-
-  <div class="match" id="white">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Betty_White_1988_Emmy_Awards_2.jpg/220px-Betty_White_1988_Emmy_Awards_2.jpg" alt="Betty White">
-    <p>Betty White!</p>
-  </div>
-</div>
-
-    </div>
-
+      <div id="celebrity">
+        <div class="row" id="iggy">
+          <div class="col-md-12">
+            <img src="img/iggy.jpg" alt="Iggy Pop" class="img-responsive">
+          </div>
+        </div>
+        <div class="row" id="carrot">
+          <div class="col-md-12">
+            <img src="img/carrot.jpg" alt="Carrot Top" class="img-responsive">
+          </div>
+        </div>
+        <div class="row" id="steve">
+          <div class="col-md-12">
+            <img src="img/steve.jpg" alt="Steve Buscemi" class="img-responsive">
+          </div>
+        </div>
+        <div class="row" id="lindsay">
+          <div class="col-md-12">
+            <img src="img/lindsay.jpg" alt="Lindsay Lohan" class="img-responsive">
+          </div>
+        </div>
+        <div class="row" id="meryl">
+          <div class="col-md-12">
+            <img src="img/meryl.jpg" alt="Meryl Streep" class="img-responsive">
+          </div>
+        </div>
+        <div class="row" id="lynda">
+          <div class="col-md-12">
+            <img src="img/lynda.jpg" alt="Lynda Carter" class="img-responsive">
+          </div>
+        </div>
+      </div>
+      </div>
   </body>
 </html>
