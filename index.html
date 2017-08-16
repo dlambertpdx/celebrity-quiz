@@ -9,8 +9,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbtron">
-        Celebrity Dating Quiz
+      <div class="jumbotron">
+        <h1>Celebrity Dating Quiz</h1>
       </div>
       <div>
         <h3>Take our quiz, and we'll tell you who your celebrity dream date is:</h3>
@@ -27,7 +27,6 @@
             <option value="thrill">Amusement Park</option>
             <option value="vacation">Exotic Vacation</option>
             <option value="dine">Quiet Dinner</option>
-            <option value="movie">Movie</option>
           </select>
         </div>
         <p><strong>What is your favorite type of music?</strong></p>
@@ -35,10 +34,6 @@
           <label>
             <input type="radio" name="music" value="rock">
             Rock-n-Roll
-          </label>
-          <label>
-            <input type="radio" name="music" value="jazz">
-            Jazz
           </label>
           <label>
             <input type="radio" name="music" value="classical">
@@ -49,7 +44,26 @@
             Country
           </label>
         </div>
+
+        <button type="button" class="btn btn-primary" name="button">Find Your Match!</button>
       </form>
+      
+<div class="output">
+  <div class="match" id="seinfeld">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Jerry_Seinfeld.jpg" alt="Jerry Seinfeld">
+    <p>Jerry Seinfeld!</p>
+  </div>
+  <div class="match" id="feldman">
+    <img src="http://www.unsungfilms.com/wp-content/uploads/2012/02/feldman04.jpg" alt="Marty Feldman">
+    <p>Marty Feldman!</p>
+  </div>
+
+  <div class="match" id="white">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Betty_White_1988_Emmy_Awards_2.jpg/220px-Betty_White_1988_Emmy_Awards_2.jpg" alt="Betty White">
+    <p>Betty White!</p>
+  </div>
+</div>
+
     </div>
 
   </body>
