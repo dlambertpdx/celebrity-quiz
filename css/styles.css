@@ -1,15 +1,15 @@
-#celebrity > div {
-  display: none;
-}
-
-.help {
-  display: none;
+.jumbotron {
+  text-align: center;
+  background-color: LightBlue;
 }
 
 form {
-  width: 45%;
+  width: 60%;
 }
 
-h1 {
-  text-align: center;
+#output {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: FireBrick;
+  padding-top: 15px;
 }

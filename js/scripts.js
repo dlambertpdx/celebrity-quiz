@@ -1,90 +1,32 @@
-// Backend Logic
-var choose = function(dine, movie) {
-  if(dine === 'pizza' && movie === 'drama') {
-    return 'img/carrot.jpg'
-  }
-  if(dine === 'molecule' && movie === 'comedy') {
-    return 'img/carrot.jpg'
-  }
-  if(dine === 'fast' && movie === 'horror') {
-    return 'img/carrot.jpg'
-  }
-  if(dine === 'homemade' && movie === 'artsy') {
-    return 'img/carrot.jpg'
-  }
+$(document).ready(function(){
+ $("form").submit(function(event){
+   event.preventDefault();
+   var nameInput = $("#name").val();
+   var dine = $("#dine").val();
+   var movie = $("input:radio[name=movie]:checked").val();
+   var result;
 
-  if(dine === 'pizza' && movie === 'drama') {
-    return 'img/iggy.jpg'
-  }
-  if(dine === 'molecule' && movie === 'comedy') {
-    return 'img/iggy.jpg'
-  }
-  if(dine === 'fast' && movie === 'horror') {
-    return 'img/iggy.jpg'
-  }
-  if(dine === 'homemade' && movie === 'artsy') {
-    return 'img/iggy.jpg'
-  }
+   if (dine === "homemade" && movie === "horror") {
+       result = "Linda Blair"
+     } else if (dine === "homemade" && movie === "drama") {
+       result = "Joan Crawford";
+     } else if (dine === "homemade" && movie === "comedy") {
+       result = "Jim Carrey";
+     } else if (dine === "fast" && movie === "horror") {
+       result = "Sid Haig";
+     } else if(dine === "fast" && movie === "drama") {
+       result = "Renee Zellweger";
+     } else if (dine === "fast" && movie === "comedy") {
+       result = "Sarah Silverman";
+     } else if (dine === "pizza" && movie === "horror") {
+       result = "Meryl Streep";
+     } else if (dine === "pizza" && movie === "drama") {
+       result = "Steve Carell";
+     } else if (dine === "pizza" && movie === "comedy") {
+       result = "Emma Stone";
+     }
 
-  if(dine === 'pizza' && movie === 'drama') {
-    return 'img/steve.jpg'
-  }
-  if(dine === 'molecule' && movie === 'comedy') {
-    return 'img/steve.jpg'
-  }
-  if(dine === 'fast' && movie === 'horror') {
-    return 'img/steve.jpg'
-  }
-  if(dine === 'homemade' && movie === 'artsy') {
-    return 'img/steve.jpg'
-  }
 
-  if(dine === 'pizza' && movie === 'drama') {
-    return 'img/lindsay.jpg'
-  }
-  if(dine === 'molecule' && movie === 'comedy') {
-    return 'img/lindsay.jpg'
-  }
-  if(dine === 'fast' && movie === 'horror') {
-    return 'img/lindsay.jpg'
-  }
-  if(dine === 'homemade' && movie === 'artsy') {
-    return 'img/lindsay.jpg'
-  }
-
-  if(dine === 'pizza' && movie === 'drama') {
-    return 'img/linda.jpg'
-  }
-  if(dine === 'molecule' && movie === 'comedy') {
-    return 'img/linda.jpg'
-  }
-  if(dine === 'fast' && movie === 'horror') {
-    return 'img/linda.jpg'
-  }
-  if(dine === 'homemade' && movie === 'artsy') {
-    return 'img/linda.jpg'
-  }
-
-  if(dine === 'pizza' && movie === 'drama') {
-    return 'img/meryl.jpg'
-  }
-  if(dine === 'molecule' && movie === 'comedy') {
-    return 'img/meryl.jpg'
-  }
-  if(dine === 'fast' && movie === 'horror') {
-    return 'img/meryl.jpg'
-  }
-  if(dine === 'homemade' && movie === 'artsy') {
-    return 'img/meryl.jpg'
-  }
-}
-
-// front-end Logic
-$(document).ready(function() {
-  $('input#tpUnder').click(function() {
-    window.location = "img/tp.jpg"
-  });
-  $('input#tpOnTop').click(function() {
-    window.location = "img/tp.jpg"
-  });
+ $("#output").text("Your celebrity match is " + result + "!");
+ });
 });

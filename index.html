@@ -9,81 +9,54 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1>Celebrity Dating Quiz</h1>
-      </div>
-      <form>
-        <div class="form-group">
-          <label for="dine">What would you eat on your ideal date?</label>
-          <select class="form-control" name="dine" id="dine">
+          <div class="jumbotron">
+            <h1>Celebrity Dating Quiz</h1>
+          </div>
+          <div>
+            <h3>Take our quiz to find your Celebrity Match!</h3>
+          </div>
+
+          <form>
+            <div class= "form-group">
+              <label for="name">What's your name?</label>
+              <input id="name" class="form-control" type="text">
+            </div>
+
+
+          <p><strong>What's your favorite type of cuisine?</strong></p>
+          <select class="form-control" id="dine">
             <option></option>
-            <option value="pizza">Pizza</option>
-            <option value="molecule">Molecular Gastronomy</option>
-            <option value="fast">Fast Food</option>
-            <option value="homemade">Homemade Cooking</option>
+            <option id="homemade" value="homemade">Homemade</option>
+            <option id="fast" value="fast">Fast Food</option>
+            <option id="pizza" value="pizza">Pizza</option>
           </select>
-          <span id="helpDine" class="help">WHAT KIND OF FOOD WOULD YOU LIKE?</span>
-        </div>
-
-        <div class="form-group">
-          <label for="tp">Which way do you roll your tp?</label>
-          <label class="radio-inline">
-            <input id="tpOver" type="radio" name="tp">Over
+          <br>
+          <p><strong>What movie genre is your favorite?</strong></p>
+          <div class="radio">
+          <label>
+            <input type="radio" name="movie" value="horror" checked>
+            Horror
           </label>
-          <label class="radio-inline">
-            <input id="tpUnder" type="radio" name="tp"> Under
-          </label>
-          <label class="radio-inline">
-            <input id="tpOnTop" type="radio" name="tp"> Just on top of the empty roll ...
-          </label>
-          <span id="helpTp" class="help">Slow your roll, and tell us how you roll...</span>
-        </div>
+          </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="movie" value="drama">
+                Drama
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="movie" value="comedy">
+                Comedy
+              </label>
+            </div>
 
-        <div class="form-group">
-          <label for="movie">What's your favorite movie genre?</label>
-          <select class="form-control" name="movie" id="movie">
-            <option></option>
-            <option value="horror">Horror</option>
-            <option value="comedy">Comedy</option>
-            <option value="drama">Drama</option>
-            <option value="artsy">Artsy</option>
-          </select>
-        </div>
+          <button type="submit" class="btn btn-primary">Show me which Harry Potter character I am!</button>
+        </form>
 
-        <button type="button" class="btn btn-primary">See Your Celebrity Match!</button>
-      </form>
-      <div id="celebrity">
-        <div class="row" id="iggy">
-          <div class="col-md-12">
-            <img src="img/iggy.jpg" alt="Iggy Pop" class="img-responsive">
-          </div>
+        <div id="output">
+         </div>
+
         </div>
-        <div class="row" id="carrot">
-          <div class="col-md-12">
-            <img src="img/carrot.jpg" alt="Carrot Top" class="img-responsive">
-          </div>
-        </div>
-        <div class="row" id="steve">
-          <div class="col-md-12">
-            <img src="img/steve.jpg" alt="Steve Buscemi" class="img-responsive">
-          </div>
-        </div>
-        <div class="row" id="lindsay">
-          <div class="col-md-12">
-            <img src="img/lindsay.jpg" alt="Lindsay Lohan" class="img-responsive">
-          </div>
-        </div>
-        <div class="row" id="meryl">
-          <div class="col-md-12">
-            <img src="img/meryl.jpg" alt="Meryl Streep" class="img-responsive">
-          </div>
-        </div>
-        <div class="row" id="lynda">
-          <div class="col-md-12">
-            <img src="img/lynda.jpg" alt="Lynda Carter" class="img-responsive">
-          </div>
-        </div>
-      </div>
-      </div>
   </body>
 </html>
